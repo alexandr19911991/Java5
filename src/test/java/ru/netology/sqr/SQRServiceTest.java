@@ -9,7 +9,7 @@ public class SQRServiceTest {
 
     @ParameterizedTest
     @CsvFileSource(files = "src/test/resources/numbers.csv")
-    public void testCalcSqr(int expected,int x, int y) {
+    public void testCalcSqr(int expected, int min, int max) {
         SQRService service = new SQRService();
 
         int actual = service.calcSQR(150, 250);
